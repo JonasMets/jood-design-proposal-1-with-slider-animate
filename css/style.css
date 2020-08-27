@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: myURWDINArabic;
+  src: url(../FontsFree-Net-URW-DIN-Arabic-1.ttf);
+}
+
+/*  här lägger vi de färger som ska användas */
+:root{
+  --primaryColor:#1487FD;
+  --primaryColorDarker:#007efb;
+
+  --mellowYellow: #FFBB00;
+  --mediumGrey: #8A8A8A;
+  --almostBlack: #333333;
+  --mixedBlue: #1487FD - #42A0FF;
+
+  --inputField: #FBFBFB;
+
+  --lightPink: #FDF3D7;
+
+}
+
+.font-roboto{
+  font-family:'Roboto', sans-serif !important;
+  font-size: 16px !important;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    background: var(--white);
+}
+
+.logo-img{
+  width: 120px;
+  height: 57px;
+}
+
+
+
+#myheader .nav-link.active{
+  color: var(--mellowYellow) !important;
+}
+
+#myheader.active:after{
+  content: ""; 
+    display: block; 
+    width: 20%; 
+    padding-top: 2px; 
+    border-bottom: 2px solid var(--mellowYellow) !important;
+}
+
+
+
+.text-mediumGrey{
+  color: var(--mediumGrey);
+  font-weight: normal;
+}
+
+.my-button1{
+  background-color: var(--lightPink);
+  color: var(--mellowYellow);
+}
+
+.btn{
+  padding: 0.7em 2em !important;
+  border-radius: 12px !important;
+}
+
+.my-button2{
+  width: 232px;
+  height: 80px;
+}
+
+.color-mellowYellow{
+  color: var(--mellowYellow);
+}
+
+.bg-color-lightPink{
+  background-color: var(--lightPink);
+}
+
+
+.myheader-bg{
+  background: url('../images/header-bg.png') no-repeat  ;
+  width: 100%;
+  background-position:35% 95%;
+  
+}
+
+#myheader .header-nav-link{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-us-bg{
+  background: url('../images/bg.png') no-repeat center;
+  width: 100%;
+  height: 100%;
+  margin: 0px 5px 0px 5px;
+}
+
+#Features{
+  background: var(--lightGray);
+}
+
+.bg-Application-Statistics{
+
+  /* transform:scaleY(1); */
+  /* transform-origin:top; */
+
+  background: url('../images/bg-statistics.png') no-repeat center ;
+}
+
+.header-Statistics-text{
+  color: var(--primaryColor);
+  font-size: x-large;
+  font-family: myURWDINArabic;
+}
+
+#Download-application{
+  content: '';
+  position: relative;
+  background: url('../images/Bg-dowload-now.png') no-repeat center ;
+}
+
+.iphonex3mod{
+  position: absolute;
+  top: -160px;
+  margin-top: 80px;
+}
+
+.input-field-bg{
+  background-color: var(--inputField) !important;
+}
+
+.input-field-message{
+  width: 100%;
+  height: 150px;
+}
+
+.contact-form-btn-submit{
+  background-color: #3096FE;
+}
+
+#Footer-main{
+  background: url('../images/footer-bg.png') no-repeat center/cover ;
+  width: 100%;
+  height: 150%;
+}
+
+#Footer-main .footer-nav-link{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+/* owl */
+#slider2 .owl-item.center {
+  background: url('../images/iPhoneshell.png') no-repeat ;
+  background-size: contain;
+}
+
+#slider2 .owl-item > div {
+  cursor: pointer;
+  margin: 6% 6%;
+  padding: 10px 10px 6px 10px ;
+  transition: margin 0.4s ease;
+}
+#slider2 .owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+  opacity: 1;
+}
+#slider2 .owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+
+#slider2{
+  overflow: hidden;
+  min-height: 468px;
+}
+
+
+/*  test */
+/* #slider2 .owl-carousel .owl-stage {
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+}
+#slider2 .carousel_2 .active.center + .active,.carousel .active:first-child,
+.carousel_2 :not(.active) + .active{
+ height:150px;
+}
+#slider2 .carousel .active.center{
+ height:200px;
+}
+#slider2 .owl-carousel .owl-item img{height:100%} */
+/*  test */
+
+
+
+
+/* media query */
+@media screen and (min-width: 992px) {
+  #myheader .active:after{
+    content: ""; 
+      display: block; 
+      width: 60%; 
+      padding-top: 2px; 
+      border-bottom: 2px solid var(--mellowYellow) !important;
+  }
+  #slider2{
+    min-height: 368px;
+
+    overflow: hidden;
+    /* transform:scaleY(1); */
+  /* transform-origin:top; */
+
+  }
+}
+
