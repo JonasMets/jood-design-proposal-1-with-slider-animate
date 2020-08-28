@@ -44,7 +44,7 @@ body {
   color: var(--mellowYellow) !important;
 }
 
-#myheader.active:after{
+#myheader .active:after{
   content: ""; 
     display: block; 
     width: 20%; 
